@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<body>
+		<p>Following link works fine</p>
+		<ul>
+			<li><a href="http://google.com" target="_blank">http://google.com</a></li>
+		</ul>
+
+		<p>Following links work only the first time</p>
+		<ul>
+			<li><a href="mailto:whatever@example.com">mailto:whatever@example.com</a></li>
+			<li><a href="atom://open?url=file:///whatever">atom://open?url=file:///whatever</a></li>
+			<li><a href="phpstorm://open?url=file:///whatever">phpstorm://open?url=file:///whatever</a></li>
+			<li><a href="subl://open?url=file:///whatever">subl://open?url=file:///whatever</a></li>
+			<li><a href="txmt://open?url=file:///whatever">txmt://open?url=file:///whatever</a></li>
+			<li><a href="atom://open?url=file:///whatever">atom://open?url=file:///whatever</a></li>
+			<li><a href="vscode:///whatever">vscode:///whatever</a></li>
+		</ul>
+
+		<p>Switching to a different tab and back makes the links work again (only the first click).</p>
+
+		<p>Undocking (and re-docking) dev tools makes the links work fine (even subsequent clicks).</p>
+	</body>
+</html>
